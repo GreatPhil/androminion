@@ -3,6 +3,10 @@
 - Note: This is neither supported nor endorsed by Rio Grande Games.
 - [Androminon Official Releases Are Located Here](https://github.com/mehtank/androminion/releases)
 
+### Unofficial Releases:
+
+Version 1.0.0  ---  Original release for CS510 project.
+
 ### How to Compile:
 
 Within the 'src/' directory, type: __javac com/vdom/core/Game.java__
