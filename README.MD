@@ -1,23 +1,16 @@
-# Androminon: Unofficial Dominion for Android
+## Androminon: Unofficial Dominion for Android
 
-[All releases](https://github.com/mehtank/androminion/releases)
+- Note: This is neither supported nor endorsed by Rio Grande Games.
+- [Androminon Official Releases Are Located Here](https://github.com/mehtank/androminion/releases)
 
-This is neither supported nor endorsed by Rio Grande Games.
+### How to Compile:
 
-### How to compile
+Within the 'src/' directory, type: __javac com/vdom/core/Game.java__
 
-(Coming soon)
+### Summary:
 
-### Steps to run a multiplayer game
+This project was forked in October 2017 from the official Androminion "VDom" project (https://github.com/mehtank), which is a well-maintained software implementation of the widely popular Dominion card game, including a few AI player implementations built on top of a baseline heuristic (BasePlayer) computer player.
 
-**You need the source code to compile the server vdom!**
+As part of a group project for an Artificial Intelligence class (CS510) that I was enrolled in at Drexel University, I worked with a project group to extend the VDom baseline player to include both a forward search for the __Action phase__ and pre-planner which would select the cards to acquire as part of its __Buy Phase__.  Our final report for the project is included here as well.
 
-In the vdom directory, type 'ant run' (or just start com.vdom.core.Game with whatever arguments you want - the build file build.xml has some default arguments).  Be sure you know the host name or ip address for the machine that's running the game server, and that the player ports (by default 2255 and 2256) aren't blocked by your machine's firewall.
-
-Open the app on two separate devices.  Use the "join game" dialog to enter your name, the host name or ip address of the machine running the server, then the port that shows up in the terminal where you're running the server.  Once the first player connects, a second port will show up; enter that one in on the second device (should be 2255 and 2256). The interface for the first player that connects will be missing a lot of stuff until the second player connects, but once both players are there, things work fine.
-
-### On network permissions and usage
-
-This app functions by using a strictly local networking layer to talk between the player and the game -- currently, unless using multiplayer, **no data is sent in or out of the phone**.  Nonetheless, this local network still requires networking permission, and such internal data transfer may show up as total app usage.
-
-
+This repo will be used for updating the project further beyond the scope reached in class, and potentially including reinforcement learning (RL) to improve / tune our Dominion AI player's utility function weights.
