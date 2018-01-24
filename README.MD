@@ -2,6 +2,7 @@
 
 - Note 1 : This is neither supported nor endorsed by Rio Grande Games.
 - Note 2 : This version of androminion was modified substantially for a class project.
+- Note 3 : Majority of newly added code is located in: androminion/src/com/vdom/players/.
 - [Androminon Official Releases Are Located Here](https://github.com/mehtank/androminion/releases)
 
 ### Unofficial Releases:
